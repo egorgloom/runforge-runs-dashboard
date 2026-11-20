@@ -1,0 +1,45 @@
+.wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: var(--gap-lg) var(--gap-md);
+  text-align: center;
+  background: var(--bg-surface);
+  border-radius: var(--radius);
+  border: 1px solid var(--border-light);
+}
+
+.title {
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--ink-main);
+  margin-bottom: var(--gap-sm);
+}
+
+.message {
+  color: var(--ink-soft);
+  margin-bottom: var(--gap-lg);
+  max-width: 400px;
+  overflow-wrap: anywhere;
+}
+
+.button {
+  padding: 10px 24px;
+  background-color: var(--accent);
+  color: white;
+  border: none;
+  border-radius: var(--radius);
+  font-weight: 500;
+  cursor: pointer;
+  transition: opacity 0.2s;
+}
+
+.button:hover {
+  opacity: 0.9;
+}
+
+.button:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}

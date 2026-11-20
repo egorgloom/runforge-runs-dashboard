@@ -1,0 +1,34 @@
+.badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4px 10px;
+  border-radius: 4px;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  width: fit-content;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.dot {
+  display: none;
+}
+.queued {
+  background-color: var(--status-queued-bg);
+  color: var(--status-queued-text);
+}
+.running {
+  background-color: var(--status-running-bg);
+  color: var(--status-running-text);
+}
+.succeeded {
+  background-color: var(--status-succeeded-bg);
+  color: var(--status-succeeded-text);
+}
+.failed {
+  background-color: var(--status-failed-bg);
+  color: var(--status-failed-text);
+}
